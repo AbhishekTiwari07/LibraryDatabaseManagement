@@ -13,7 +13,7 @@ const registration = (i)=>{
     redirect: 'follow'
     };
     console.log(i)
-    fetch("./admin", requestOptions)
+    fetch("http://localhost:3000/admin", requestOptions)
     .then(response => {
         response.text()
     })

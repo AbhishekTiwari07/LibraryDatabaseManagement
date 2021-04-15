@@ -13,7 +13,7 @@ const uregistration = (i)=>{
     redirect: 'follow'
     };
     console.log(i)
-    fetch("./user", requestOptions)
+    fetch("http://localhost:3000/user", requestOptions)
     .then(response => response.text())
     .then(result => {
         result = JSON.parse(result)

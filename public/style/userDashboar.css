@@ -1,0 +1,120 @@
+.result {
+    width: 100%;
+    position: relative;
+}
+.abso {
+    position: absolute;
+    height: 800px;
+    background: url("../img/1.jpg");
+    width: 100%;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.cont {
+    width: 80%;
+    margin: auto;
+    box-shadow: -1px 10px 6px 10px rgba(14, 13, 13, 0.5);
+}
+
+ul {
+    background: #6e6e6e;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 41px 0;
+    color: rgba(0,0,0,.6);
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+}
+ul li p {
+    font-size: 6em;
+    font-weight: bolder;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 4em;
+    color: rgba(0,0,0,.6);
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+    margin-left: 10px;
+}
+ul li a:hover {
+    color: rgba(0,0,0,.7)
+}
+
+header {
+    width: 100%;
+    background: url("../style/1.jpg");
+    height: 600px;
+    background-size: 100% 100%
+}
+
+#searchByName {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    width: 40%;
+    padding: 5px 0;
+}
+
+.icon {
+    margin-left: 20px;
+}
+.icon .fa {
+    margin-top: 10%;
+    font-size: 2em;
+    color: gray;
+}
+
+#searchByName .Search {
+    height: 100%;
+    margin-left: 20px;
+    width: 350px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2em;
+}
+
+#search {
+    width: 70px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.result1 {
+    width: 100%;
+}
+
+.cont1 {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.grids {
+    width: 30%;
+    margin-top: 30px;
+    background: lightgrey;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.grids img {
+    height: 250px;
+}
+.issue {
+    display: flex;
+    justify-content: space-around;
+}

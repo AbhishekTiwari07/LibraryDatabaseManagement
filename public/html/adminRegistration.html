@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/custom.css">
+    <link rel="stylesheet" href="../style/adminRegistration.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,18 +14,23 @@
         <h1 class="adminHeader">Admin Registration</h1>
         <form class="adminRegForm" id="adminRegForm">
             <label id="adminRegID">
+                <i class="fa fa-id-badge fa-3x"></i>
                 <input type="text" id="id" value="" placeholder="ID">
             </label>
             <label id="adminRegName">
+                <i class="fa fa-user fa-3x"></i>
                 <input type="text" id="name" value="" placeholder="Name">
             </label>
-            <label id="adminEmail">
+            <label id="adminRegEmail">
+                <i class="fa fa-envelope fa-3x"></i>
                 <input type="text" id="email" value="" placeholder="Email">
             </label>
             <label id="adminRegPass">
+                <i class="fa fa-lock fa-3x"></i>
                 <input type="password" id="pass" value="" placeholder="Password">
             </label>
             <label id="adminRegConPass">
+                <i class="fa fa-lock fa-3x"></i>
                 <input type="password" id="cnfpass" value="" placeholder="Confirm Password">
             </label>
             <label id="adminRegAction">
@@ -32,6 +40,6 @@
         </form>
     </main>
 </body>
-<script src="./admin.js">
+<script src="../script/admin.js">
 </script>
 </html>

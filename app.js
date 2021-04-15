@@ -10,7 +10,7 @@ const adminRoute = require('./route/admin')
 
 app.use(parser.json())
 
-const dirViews = path.join(__dirname,'/public')
+const dirViews = path.join(__dirname,'/public/html')
 const dirPublic = path.join(__dirname,'/public')
 app.use(express.static(dirPublic))
 

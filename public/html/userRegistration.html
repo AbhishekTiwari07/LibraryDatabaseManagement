@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/custom.css">
+    <link rel="stylesheet" href="../style/userRefistration.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,15 +14,19 @@
         <h1 class="userHeader">User Registration</h1>
         <form class="userRegForm" id="userRegForm">
             <label id="userRegName">
+                <i class="fa fa-user fa-3x"></i>
                 <input type="text" id="name" value="" placeholder="Name">
             </label>
-            <label id="userEmail">
-                <input type="text" id="email" v placeholder="Email">
+            <label id="userRegEmail">
+                <i class="fa fa-envelope fa-3x"></i>
+                <input type="text" id="email" value="" placeholder="Email">
             </label>
             <label id="userRegPass">
+                <i class="fa fa-lock fa-3x"></i>
                 <input type="password" id="pass" value="" placeholder="Password">
             </label>
             <label id="userConRegPass">
+                <i class="fa fa-lock fa-3x"></i>
                 <input type="password" id="cnfpass" value="" placeholder="Confirm Password">
             </label>
             <label id="userRegAction">
@@ -29,6 +36,6 @@
         </form>
     </main>
 </body>
-<script src="./user.js">
+<script src="../script/user.js">
 </script>
 </html>

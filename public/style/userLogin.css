@@ -1,0 +1,67 @@
+body {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.userHeader {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 8em;
+    letter-spacing: 5px;
+    color: rgba(0,0,0,.6);
+    text-shadow: 2px 3px 6px rgba(255, 255, 255, 0.5);
+}
+
+.userForm {
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 60%;
+    list-style: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userForm label {
+    margin: 30px 0;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.userForm label input {
+    font-size: 2em;
+    width: 70%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 3px;
+    margin-left: 10px;
+}
+.userForm label i {
+    margin-left: 10px;
+    color: gray;
+    text-shadow: 2px 3px 6px black
+}
+#userEmail, #userPass {
+    height: 50px;
+    width: 40%;
+}
+
+#userAction {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+}
+#userAction input {
+    width: 45%;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: whitesmoke;
+    font-weight: bold;
+    color: black;
+}
+

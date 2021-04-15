@@ -33,7 +33,7 @@ const fun = (obj) => {
     redirect: 'follow'
     };
 
-    fetch("/book", requestOptions)
+    fetch("http://localhost:3000/book", requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));

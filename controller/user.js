@@ -44,7 +44,9 @@ const update = (req,res)=>{
         email : req.body.email,
         password : req.body.password
     }
-        
+    
+    // req.token.id = to get user ID
+
     models.User.update(user,{
         where:{
             id
@@ -111,6 +113,7 @@ const reqForBook = (req,res)=>{
         dueOn : null,
         status : 0
     }
+    console.log(req)
     models.Borrowlog.create(request).then(req => res.status(201).json(req)).catch(err=>res.json(err))
 }
 
