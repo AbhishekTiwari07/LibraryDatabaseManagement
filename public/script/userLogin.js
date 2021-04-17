@@ -20,9 +20,11 @@ fetch("http://localhost:3000/user/login", requestOptions)
         result = JSON.parse(result)
         localStorage.setItem("token", result.token)
         console.log(localStorage.getItem("token"))
-        console.log(result)
+        // console.log(result)
         if(result.message === "Email not found")
-            alert("Gannd maro")
+            alert("Email not Found")
+        else if(result.message === "Password mismatch")
+            alert("Password mismatch")
         else
             window.location.href = "./userDashboard.html"
   })

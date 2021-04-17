@@ -85,6 +85,7 @@ const login = (req,res)=>{
             return res.send({
                 message : "Email not found"
             })
+        console.log(req.body)
         bcrypt.compare(req.body.password, user.password, (err,result)=>{
             if(result){
                 const token = jwt.sign({

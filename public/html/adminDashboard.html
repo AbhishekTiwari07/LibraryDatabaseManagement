@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/custom.css">
+    <link rel="stylesheet" href="../style/adminDashboard.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <button id="logout">LogOut</button>
-    </ul>
+    <div class="header">
+        <div><i class="fa fa-sign-out fa-5x"></i><button id="logout">Log Out</button></div>
+    </div>
+    <div class="container">
+        <span class="choose">Select from the following</span>
+          <div class="dropdown">
+            <div class="select">
+              <span>Select Status</span>
+              <i class="fa fa-chevron-left"></i>
+            </div>
+            <input type="hidden" name="gender">
+            <ul class="dropdown-menu">
+              <li id="zero">Approve</li>
+              <li id="one">Approved</li>
+              <li id="twosome">Return</li>
+            </ul>
+          </div>
+      
+      <span class="msg"></span>
+    </div>
+    <div class="result">
+        <div class="abso">
+
+        </div>
+        <div id="cont" class="cont">
+            <div class="grid">
+                <div class="main">ISBN</div>
+                <div class="main">User Id</div>
+                <div class="main">Issue Date</div>
+                <div class="main">Due Date</div>
+                <div class="main">Status</div>
+                <div class="main">Action</div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="../script/adminDashboard.js"></script>
 </html>

@@ -21,7 +21,9 @@ fetch("http://localhost:3000/admin/login", requestOptions)
         localStorage.setItem("token", result.token)
         console.log(localStorage.getItem("token"))
         if(result.message === "Email not found")
-            alert("Gannd maro")
+            alert("Email not Found")
+        else if(result.message === "Password mismatch")
+            alert("Password mismatch")
         else
             window.location.href = "./adminDashboard.html"
     })

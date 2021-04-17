@@ -6,6 +6,7 @@ const bookRoute = require('./route/book')
 const userRoute = require('./route/user')
 const searchBook = require('./route/search')
 const adminRoute = require('./route/admin')
+const borrowRoute = require('./route/borrow')
 // const pages = require('./route/render')
 
 app.use(parser.json())
@@ -43,6 +44,7 @@ app.use("/book", bookRoute)
 app.use("/user", userRoute)
 app.use("/search", searchBook)
 app.use("/admin", adminRoute)
+app.use("/borrow", borrowRoute)
 // app.use("/",pages)
 
 module.exports = app

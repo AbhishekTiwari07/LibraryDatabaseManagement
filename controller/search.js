@@ -4,7 +4,7 @@ const Gsearch = (req,res)=>{
     const book = req.params.name
     var options = {
         'method': 'GET',
-        'url': 'https://www.googleapis.com/books/v1/volumes?q='+book+'+intitle',
+        'url': 'https://www.googleapis.com/books/v1/volumes?q='+encodeURI(book)+'+intitle',
         'headers': {
         },
         'json':true
