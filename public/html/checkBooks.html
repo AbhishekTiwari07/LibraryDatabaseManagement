@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/custom.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .cont {
+            width: 80%;
+            border: 5px solid rgba(0,0,0,.6);;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        i {
+            color: rgba(0,0,0,.6);
+            text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+            margin-right: 10px;
+        }
+        .grid {
+            width: 100%;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.5em;
+        }
+        .grid:nth-child(odd) {
+            background: rgb(128, 128, 148);
+        }
+        .grid:nth-child(even) {
+            background: rgb(102, 102, 116);
+        }
+        .grid div {
+            padding: 20px;
+            width: 15%;
+        }
+        .main {
+            font-weight: bolder;
+            letter-spacing: 5px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="cont" class="cont">
+        <div class="grid">
+            <div class="main">ISBN</div>
+            <div class="main">Title</div>
+            <div class="main">Edition</div>
+            <div class="main">Total Copies</div>
+            <div class="main">Remaining Copies</div>
+            <div class="main">Delete</div>
+        </div>
+    </div>
+
+    <script src="../script/checkBooks.js"></script>
+</body>
+</html>

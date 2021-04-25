@@ -7,6 +7,6 @@ router.post("/", admin.signUp)
 router.post("/login", admin.login)
 router.get("/info/:status",borrow.info)
 router.post("/approv", borrow.approv)
-router.delete("/rapprov/:isbn", borrow.rapprov)
+router.delete("/rapprov/:id", borrow.rapprov)
 
 module.exports = router

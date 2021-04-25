@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/custom.css">
+    <link rel="stylesheet" href="../style/suggest.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
     <main>
-        <h1 class="userHeader">User Login</h1>
+        <h1 class="userHeader">Suggest</h1>
         <form class="suggestForm" id="suggestForm">
             <label id="isbn">
-                <input type="text" value="">ISBN
+                <i class="fa fa-book fa-3x"></i>
+                <input type="text" placeholder="ISBN">
             </label>
-            <label id="title" >
-                <input type="text" for="title" value="">Title
+            <label id="title">
+                <i class="fa fa-header fa-3x"></i>
+                <input type="text" placeholder="Title">
             </label>
-            <label id="edition" >
-                <input type="text" value="">Edition
+            <label id="edition">
+                <i class="fa fa-file fa-3x"></i>
+                <input type="text" placeholder="Edition">
             </label>
-            <label id="totalCopy" >
-                <input type="text" value="">Total Copy
+            <label id="totalCopy">
+                <i class="fa fa-files-o fa-3x"></i>
+                <input type="text" placeholder="Total Copy">
             </label>
             <label id="submit">
                 <input type="submit" value="Submit">

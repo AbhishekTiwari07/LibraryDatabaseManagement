@@ -39,6 +39,12 @@ app.get('/userRegistration',function(req,res){
 app.get('/addBook',function(req,res){
     res.sendFile(path.join(dirViews+'/suggest.html'));
 })
+app.get('/checkBooks',function(req,res){
+    res.sendFile(path.join(dirViews+'/checkBooks.html'));
+})
+app.get('/checkUser',function(req,res){
+    res.sendFile(path.join(dirViews+'/checkUser.html'));
+})
 
 app.use("/book", bookRoute)
 app.use("/user", userRoute)

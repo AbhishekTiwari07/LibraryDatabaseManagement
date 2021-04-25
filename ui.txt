@@ -1,10 +1,13 @@
 admin login 
-admin reg
+admin reg  (Hidden and secured)
 
 user login
 user reg 
 
 admin dashboard
+    DB -books
+       -users
+    Add book
 
 user dashboard 
     form - issue book

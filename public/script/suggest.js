@@ -35,6 +35,17 @@ const fun = (obj) => {
 
     fetch("http://localhost:3000/book", requestOptions)
     .then(response => response.text())
-    .then(result => console.log(result))
+    .then(res => {
+        res = JSON.parse(res)
+        console.log(res.error)
+        if(res.message == "Saved")
+            alert("Book Saved")
+        else if(res.error.name == "SequelizeUniqueConstraintError")
+            alert("Book already exist")
+        else if(res.error.name == "SequelizeDatabaseError")
+            alert("Edition and total copies must be Natural number")
+        else
+            alert("ISBN must be 13 digit long")
+    })
     .catch(error => console.log('error', error));
 }

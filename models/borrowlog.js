@@ -16,7 +16,6 @@ module.exports = (sequelize, DataTypes) => {
   Borrowlog.init({
     isbn: {
       type:DataTypes.STRING(13),
-      primaryKey:true,
       allowNull:false,
       unique:true,
     },

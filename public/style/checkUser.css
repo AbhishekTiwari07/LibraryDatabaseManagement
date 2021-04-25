@@ -1,0 +1,120 @@
+
+.extra {
+    background: gray;
+    height: 100px;
+    background-size: 100% 100%;
+}
+#form {
+    width: 30%;
+    height: 40px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    display: flex;
+    background: white;
+    border-radius: 30px;
+}
+.icon {
+    margin-left: 20px;
+    color: gray;
+}
+.icon .fa {
+    margin-top: 50%;
+}
+#form .search {
+    height: 100%;
+    margin-left: 20px;
+    width: 350px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 0.8em;
+}
+
+#submit {
+    width: 70px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+.cont {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+.grid {
+    width: 90%;
+    height: 90%;
+    margin: 5% auto;
+    background-color: rgba(0, 0, 0, 0.3);;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgba(0,0,0,.6);
+    text-shadow: 2px 3px 6px rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 1px 5px lightslategrey;
+}
+
+.main {
+    margin: 0 20px;
+    font-size: 3em;
+}
+.main button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 1px;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+.hidden {
+    top: 50%;
+    opacity: 1;
+    z-index: 1;
+}
+
+#updForm {
+    z-index: 0;
+    height: 500px;
+    margin: 0 auto;
+    width: 500px;
+    list-style: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s linear;
+}
+
+#updForm input::placeholder {
+    color: gainsboro;
+}
+
+#updForm input {
+    border: 1px solid gainsboro;
+    font-size: 2em;
+    width: 70%;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    padding: 3px;
+    margin-left: 10px;
+    color: white;
+}

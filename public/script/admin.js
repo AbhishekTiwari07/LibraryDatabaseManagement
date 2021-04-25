@@ -36,6 +36,9 @@ adminForm.addEventListener('submit',(e)=>{
         email,
         password
     }
-    registration(j)
+    if(password == cnfpass)
+        registration(j)
+    else
+        alert("Password Mismatched")
 })
 

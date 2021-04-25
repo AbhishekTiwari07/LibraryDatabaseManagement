@@ -1,9 +1,11 @@
 const models = require('../models')
-const Sequelize = require('sequelize')
+const Sequelize = require('sequelize');
+const e = require('express');
 const Op = Sequelize.Op;
 
 const save = (req,res)=>{
     const borrow = {
+        id : req.body.id,
         isbn: req.body.isbn,
         userid: req.token.id,
         status:0
@@ -28,6 +30,7 @@ const info = (req,res)=>{
 }
 
 const approv = (req,res)=>{
+
     const bookStatus = {
         isbn : req.body.isbn,
         userid: req.body.userid,
@@ -37,8 +40,8 @@ const approv = (req,res)=>{
     }
     models.Borrowlog.update(bookStatus,{
         where:{
-            isbn:req.body.isbn
-        }   
+            id : req.body.id
+        }
     }).then(result=>{
         res.status(200).json({
             message : "successfully updated"
@@ -51,10 +54,10 @@ const approv = (req,res)=>{
 }
 
 const rapprov = (req,res)=>{
-    const isbn = req.params.isbn
+    const id = req.params.id
     models.Borrowlog.destroy({
         where:{
-            isbn
+            id
         }
     }).then(result=>{
         res.json({
@@ -69,15 +72,16 @@ const rapprov = (req,res)=>{
 
 const reqForReturn = (req,res)=>{
     const book = {
+        id : req.body.id,
         isbn : req.body.isbn,
-        userid : req.body.id,
+        userid : req.body.userid,
         issuedOn : req.body.issuedOn,
         dueOn : req.body.dueOn,
-        status : 3
+        status : 2
     }
     models.Borrowlog.update(book,{
         where:{
-            isbn:req.params.isbn
+            id:req.params.id
         }
     }).then(req => res.status(201).json(req)).catch(err=>res.json(err))
 }
