@@ -1,13 +1,5 @@
 # LibraryDatabaseManagement
 
- master
-Contributors:
-- [Abhishek Tiwari](https://github.com/AbhishekTiwari07) - Back-End/Database
-- [Yogi Valecha](https://github.com/yogivalecha9898) - Front-End
-
-
- master
-
 ## About
 
 Project has **CRUD** operations for the basic flow of management system.
