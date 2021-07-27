@@ -49,11 +49,9 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ cd LibraryDatabaseManagement
     $ npm install
 
-## Configure app
-- Put MongoURI inside config/keys.js
-  module.exports = {
-    MongoURI : "Add mongoDB URI"
-  }
+## DB Migration
+
+    $ npm sequelize-cli db:migrate
   
 ## Start 
     $ npm start
