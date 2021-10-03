@@ -93,6 +93,4 @@ and Admin Registration @ http://localhost:3000/html/AdminRegistration
 
 Team:
 - [Abhishek Tiwari](https://github.com/AbhishekTiwari07) - Back-End/Database
-- [Yogi Valecha](https://github.com/yogivalecha9898) - Front-End master
-- [NNK Kanhu Agrawalla](#) - UI designer
-- [Gaurav Dighe](#) - Database Management
+- [Yogi Valecha](https://github.com/yogivalecha9898) - Front-End
